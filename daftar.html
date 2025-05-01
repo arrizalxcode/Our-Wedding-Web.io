@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Our Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #F26480;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #F26480;
+    }
+
+    .btn-masuk {
+      background-color: #FCA4B1;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      max-width: 400px;
+    }
+
+    .form-box {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .form-box h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .role-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .role-buttons button {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #F26480;
+      border-radius: 6px;
+      background-color: #fff;
+      color: #F26480;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .role-buttons .active {
+      background-color: #F26480;
+      color: #fff;
+    }
+
+    .form-box .description {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    input[type="email"], input[type="password"], input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #F26480;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .checkbox a {
+      color: #F26480;
+      text-decoration: none;
+    }
+
+    button.submit {
+      width: 100%;
+      padding: 12px;
+      background-color: #F26480;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .google-btn {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #F26480;
+      background-color: white;
+      color: #F26480;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .form-box p {
+      font-size: 13px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .form-box p a {
+      color: #F26480;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .form-box {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <span>Our Wedding</span>
+  </div>
+  <nav>
+    <a href="index.html">Preset/Desain</a>
+    <a href="#">Portofolio</a>
+    <a href="#">Lainnya</a>
+    <a href="daftar.html" class="active">Daftar</a>
+    <button class="btn-masuk">Masuk</button>
+  </nav>
+</header>
+
+<div class="container">
+  <img src="foto 2.png" alt="Ilustrasi Pasangan">
+  <div class="form-box">
+    <h2>Daftar sebagai :</h2>
+    <div class="role-buttons">
+      <button class="active">Individu</button>
+      <button>Vendor</button>
+    </div>
+    <div class="description">
+      <strong>Individu</strong>, Buat kamu yang buat undangan untuk kamu sendiri
+    </div>
+    <div class="radio-group">
+      <label><input type="radio" name="jenis" checked> Undangan pernikahan</label>
+      <label><input type="radio" name="jenis"> Undangan lainya (khitanan, ulang tahun dsb)</label>
+    </div>
+    <input type="email" placeholder="Alamat email">
+    <input type="password" placeholder="Password">
+    <input type="text" placeholder="Nomor Handphone">
+    <input type="text" placeholder="Nama panggilan wanita">
+    <input type="text" placeholder="Nama panggilan pria">
+    <div class="checkbox">
+      <input type="checkbox" id="syarat">
+      <label for="syarat">saya menyetujui <a href="#">syarat penggunaan</a></label>
+    </div>
+    <button class="submit">Buat Sekarang</button>
+    <button class="google-btn">G Daftar dengan Google</button>
+    <p>Sudah ada akun? <a href="#">login disini</a></p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wedding - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .logo span {
+      font-size: 20px;
+      font-weight: 700;
+      color: #F26480;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: 500;
+    }
+    nav a.active, nav a:hover {
+      color: #F26480;
+    }
+    .btn-masuk {
+      background-color: #F26480;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+    .container img {
+      width: 400px;
+      max-width: 100%;
+    }
+    .text-section {
+      max-width: 500px;
+      margin-left: 60px;
+    }
+    .text-section h1 {
+      font-size: 36px;
+      color: #F26480;
+    }
+    .text-section p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #555;
+    }
+    .text-section .btn-start {
+      background-color: #F26480;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text-section {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>Our Wedding</span>
+    </div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Preset/Desain</a>
+      <a href="#">Portofolio</a>
+      <a href="#">Lainnya</a>
+      <a href="#">Daftar</a>
+      <button class="btn-masuk">Masuk</button>
+    </nav>
+  </header>
+  <div class="container">
+    <img src="foto 1.png" alt="Pengantin Utama">
+    <div class="text-section">
+      <h1>Undangan Pernikahan Digital</h1>
+      <p>Desain elegan, personal, dan mudah dibagikan. Buat undangan pernikahan digital impianmu sekarang juga.</p>
+      <button class="btn-start">Buat Undangan</button>
+    </div>
+  </div>
+</body>
+</html>
+
+
